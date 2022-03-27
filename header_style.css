@@ -1,0 +1,17 @@
+header {
+    width: 100%;
+    height: 65px;
+}
+
+.logo {
+    width: 100%;
+    font-size: large;
+    font-weight: 600;
+    color: aliceblue;
+}
+
+.navbar-toggle {
+    position: relative;
+    left: calc(95%);
+}
+
