@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#87e0fd+0,53cbf1+24,53cbf1+41,05abe0+66,05abe0+84 */
+    background: #87e0fd; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #87e0fd 0%, #53cbf1 24%, #53cbf1 41%, #05abe0 66%, #05abe0 84%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #87e0fd 0%,#53cbf1 24%,#53cbf1 41%,#05abe0 66%,#05abe0 84%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #87e0fd 0%,#53cbf1 24%,#53cbf1 41%,#05abe0 66%,#05abe0 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#05abe0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+section {
+    margin-bottom: 100px;
+}
+
+.profile {
+    border: 2px solid black;
+    height: 400px;
+    width: 300px;
+}
+
+.member {
+    text-align: center;
+    font-size: 50px;
+}
+
+.sa {
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.sa-up {
+    transform: translate(0, 100px);
+}
+
+.sa.show {
+    opacity: 1;
+    transform: none;
+  }
