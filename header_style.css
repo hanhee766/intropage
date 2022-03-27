@@ -12,6 +12,8 @@ header {
 
 .navbar-toggle {
     position: relative;
+    border: 0px;
+    background-color: transparent;
     left: calc(95%);
 }
 
