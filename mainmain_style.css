@@ -35,7 +35,7 @@ li {
 }
 
 body {
-    display: flex;
+    /* display: flex; */
     min-height: 100vh;
     background: #00d2ff;
     /* fallback for old browsers */
@@ -52,6 +52,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    top : 70px;
 }
 
 li {
