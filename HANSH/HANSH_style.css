@@ -9,6 +9,7 @@ header {
     background-color: rgb(224, 223, 221);
     border-bottom: 1px dotted rgb(41, 40, 39);
     height: 50px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
 }
 
 #header_line {
@@ -31,6 +32,7 @@ nav {
     margin-right: 10px;
     font-size: 15px;
     color: rgb(43, 41, 39);
+    font-family: 'IBM Plex Sans KR', sans-serif;
 }
 
 .cont_icon {
@@ -43,6 +45,12 @@ nav {
 .cont_wrap {
     display: flex;
     align-items: center;
+}
+
+.text_wrap {
+    color: rgb(43, 41, 39);
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 120%;
 }
 
 .contents_wrap {
