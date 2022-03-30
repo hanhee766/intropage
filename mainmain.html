@@ -13,14 +13,34 @@
   </head>
 
   <body>
+    <header>
+      <div class="logo" style="display: inline;">삼코-삼월의 코딩</div>
+      <button type="button" class="navbar-toggle" id="menuBtn">
+        <i class="fa-solid fa-bars fa-3x" style="color:rgb(2, 23, 94)"></i>
+      </button>
+      <div class="menuWrap"> 
+        <nav id="menu">
+          <ul class="menuList">
+            <li class="listStyle" style="margin-top: 0;"><a href="#">Home</a></li> 
+            <li class="listStyle" style="margin-top: 20px;"><a href="./hyejin/hyejin.html">HyeJin</a></li> 
+            <li class="listStyle"> <a href="./GeanHu/GeanHu.html">GeanHu</a></li> 
+            <li class="listStyle"> <a href="./HANSH/HANSH_page.html">HANSH</a></li> 
+            <li class="listStyle"> <a href="#">SunJung</a></li> 
+          </ul>
+         </nav> 
+      </div>
+
+      <hr>
+  </header>
+
     <div id="text_master">
-        <header>
+        <!-- <header>
             <div class="logo" style="display: block;">삼코-삼월의 코딩</div>
             <button type="button" class="navbar-toggle" >
                 <i class="fa-solid fa-bars fa-3x"></i>
             </button>
             <hr>
-        </header>
+        </header> -->
       <div id="text_wrap">
         <ul class="text">
           <li>안녕하세요!</li>
@@ -41,8 +61,8 @@
                 <h2>Member</h2>
             </div>
             <div class="photo">
-                <img src="./HyeJin.jpg" class="profile sa sa-up">
-                <img src="./2.png" class="profile sa sa-up" data-sa-delay="200">
+                <a href="./hyejin/hyejin.html"><img src="./HyeJin.jpg" class="profile sa sa-up"></a>
+                <a href="./HANSH/HANSH-page.html"><img src="./Sahnghee.png" class="profile sa sa-up" data-sa-delay="200"></a>
                 <a href="./GeanHu/GeanHu.html"><img src="./GeanHu.jpeg" class="profile sa sa-up" data-sa-delay="400"></a>
                 <img src="./SunJung.jpg" class="profile sa sa-up" data-sa-delay="600">
             </div>
@@ -85,7 +105,22 @@
             </div>
         </footer>
     </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="mainmain_script.js"></script>
-  </body>
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+ <script src="mainmain_script.js"></script>
+ <script> 
+ document.addEventListener("DOMContentLoaded", function () {
+    document .querySelector("#menuBtn") .addEventListener("click", function (e) {
+       if (document.querySelector(".menuWrap").classList.contains("on")) { 
+         //메뉴 slideOut 
+         document.querySelector(".menuWrap").classList.remove("on"); 
+        
+       } else {
+         //메뉴 slideIn 
+         document.querySelector(".menuWrap").classList.add("on"); 
+       } 
+     }); 
+   }); 
+ </script>
+ </body>
 </html>
