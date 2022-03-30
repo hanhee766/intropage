@@ -109,3 +109,7 @@ a {
     width: 30px;
     height: 30px;
 }
+
+.cont_icon:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 rgb(255, 181, 85));
+}
